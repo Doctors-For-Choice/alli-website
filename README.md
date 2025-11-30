@@ -6,9 +6,9 @@
 
 ## Clone the repository
 
-Clone with SSH: `git clone git@github.com:dinosled/alli-website.git`
+Clone with SSH: `git clone git@github.com:Doctors-For-Choice/alli-website.git`
 
-Clone with HTTPS: `git clone https://github.com/dinosled/alli-website.git`
+Clone with HTTPS: `git clone https://github.com/Doctors-For-Choice/alli-website.git`
 
 ## Install and run locally
 
