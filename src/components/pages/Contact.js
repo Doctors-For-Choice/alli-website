@@ -3,6 +3,8 @@ import Layout from "../Layout";
 import styles from "./Contact.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+import i18n from "../../utils/i18next.js";
 
 const Contact = () => {
   return (
