@@ -30,6 +30,18 @@
         }
 }
 
+.languageButton {
+  border: none;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 5px;
+  background-color: var(--core-primary);
+  color: var(--darkest-blue);
+
+  * {
+    background-color: inherit;
+  }
+}
 
 .menu {
   position: fixed;
@@ -44,6 +56,7 @@
     position: relative;
     display: flex;
     align-items: center;
+
     ul {
         padding: 8px;
         li{

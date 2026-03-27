@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import Route from "./Route";
 import { useNavigate } from "react-router-dom";
+import LanguageOptions from "./LanguageOptions";
 
 const Header = ({ isMenuOpen, setIsMenuOpen }) => {
   const navigate = useNavigate();
@@ -56,6 +57,9 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
           >
             <AlliTitle />
           </button>
+        </div>
+        <div>
+          <LanguageOptions />
         </div>
         <div className={styles.burgerContainer}>
           <button
