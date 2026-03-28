@@ -6,9 +6,11 @@ import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import Route from "./Route";
 import { useNavigate } from "react-router-dom";
 import LanguageOptions from "./LanguageOptions";
+import { useTranslation } from "react-i18next";
 
 const Header = ({ isMenuOpen, setIsMenuOpen }) => {
   const navigate = useNavigate();
+  const { t } = useTranslation("menu");
 
   const [isScrollingUp, setIsScrollingUp] = useState(false);
   const prevScrollY = useRef(window.scrollY);
@@ -97,7 +99,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                   toggleMenu();
                 }}
               >
-                Über Alli
+                {t("about-alli")}
               </button>
             </li>
             <li>
@@ -108,7 +110,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                   toggleMenu();
                 }}
               >
-                Über uns
+                {t("about-us")}
               </button>
             </li>
             <li>
@@ -119,7 +121,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                   toggleMenu();
                 }}
               >
-                Unterstützung
+                {t("support-us")}
               </button>
             </li>
             <li>
@@ -130,7 +132,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                   toggleMenu();
                 }}
               >
-                Für Fachkreise
+                {t("for-doctors")}
               </button>
             </li>
             <li>
@@ -152,7 +154,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                   toggleMenu();
                 }}
               >
-                Kontakt
+                {t("contact")}
               </button>
             </li>
             <li>
@@ -163,7 +165,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                   toggleMenu();
                 }}
               >
-                Impressum
+                {t("imprint")}
               </button>
             </li>
           </ul>

@@ -5,6 +5,8 @@ import contactDE from "../assets/locales/contact/de.json"
 import aboutUsDE from "../assets/locales/aboutUs/de.json"
 import contactEN from "../assets/locales/contact/en.json"
 import aboutUsEN from "../assets/locales/aboutUs/en.json"
+import menuDE from "../assets/locales/menu/de.json"
+import menuEN from "../assets/locales/menu/en.json"
 
 const i18n = i18next
     .use(initReactI18next)
@@ -13,10 +15,12 @@ const i18n = i18next
         debug: true,
         resources: {
             de: {
+                menu: menuDE,
                 contact: contactDE, // this is the "namespace" so we can have more json files
                 aboutUs: aboutUsDE,
             },
             en: {
+                menu: menuEN,
                 contact: contactEN,
                 aboutUs: aboutUsEN,
             },
