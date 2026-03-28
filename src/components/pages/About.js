@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <div className={styles.about}>
-      <Layout route="Über uns">
+      <Layout route={t("title")}>
         <ContentSection>
           <h1>{t("title")}</h1>
           {t("content").split("\n").map(line => <p>{line}</p>)}

@@ -9,7 +9,7 @@ const Contact = () => {
   const { t } = useTranslation("contact"); // not passing any namespace will use the defaultNS (by default set to 'translation')
   return (
     <div className={styles.contact}>
-      <Layout route="Kontakt">
+      <Layout route={t("title")}>
         <ContentSection>
           <h1>{t("title")}</h1>
           {t("content").split("\n").map(line => <p>{line}</p>)}
