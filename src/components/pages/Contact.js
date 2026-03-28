@@ -4,16 +4,15 @@ import styles from "./Contact.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
-import i18n from "../../utils/i18next.js";
 
 const Contact = () => {
+  const { t } = useTranslation("contact"); // not passing any namespace will use the defaultNS (by default set to 'translation')
   return (
     <div className={styles.contact}>
       <Layout route="Kontakt">
         <ContentSection>
-          <p>
-            Hallo, schön, dass du Kontakt zu uns aufnehmen willst! Wir werden uns so schnell wie möglich mit dir in Verbindung setzen. Aufgrund unseres kleinen Teams kann es manchmal allerdings etwas dauern, bis du von uns hörst. Vielen Dank für dein Verständnis und deine Geduld.
-          </p>
+          <h1>{t("title")}</h1>
+          {t("content").split("\n").map(line => <p>{line}</p>)}
           <a
             href="mailto:team@alli-app.com"
             aria-label="Send us a mail"

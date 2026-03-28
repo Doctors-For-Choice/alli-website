@@ -1,16 +1,25 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import detector from "i18next-browser-languagedetector";
-import { translations_de } from "./de.js";
-import { translations_en } from "./en.js";
+import contactDE from "../assets/locales/contact/de.json"
+import aboutUsDE from "../assets/locales/aboutUs/de.json"
+import contactEN from "../assets/locales/contact/en.json"
+import aboutUsEN from "../assets/locales/aboutUs/en.json"
 
 const i18n = i18next
     .use(initReactI18next)
     .use(detector)
     .init({
+        debug: true,
         resources: {
-            de: { translations: translations_de },
-            en: { translations: translations_en }
+            de: {
+                contact: contactDE, // this is the "namespace" so we can have more json files
+                aboutUs: aboutUsDE,
+            },
+            en: {
+                contact: contactEN,
+                aboutUs: aboutUsEN,
+            },
         },
         fallbackLng: "de",
         interpolation: {
