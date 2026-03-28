@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 import { useTranslation } from "react-i18next";
 
 const LanguageOptions = () => {
-    let { t, i18n } = useTranslation();
+    let { _, i18n } = useTranslation();
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
