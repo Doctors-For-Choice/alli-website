@@ -11,6 +11,8 @@ import aboutAlliDE from "../assets/locales/aboutAlli/de.json"
 import aboutAlliEN from "../assets/locales/aboutAlli/en.json"
 import imprintDE from "../assets/locales/imprint/de.json"
 import imprintEN from "../assets/locales/imprint/en.json"
+import supportUsDE from "../assets/locales/support/de.json"
+import supportUsEN from "../assets/locales/support/en.json"
 
 const i18n = i18next
     .use(initReactI18next)
@@ -24,6 +26,7 @@ const i18n = i18next
                 aboutUs: aboutUsDE,
                 aboutAlli: aboutAlliDE,
                 imprint: imprintDE,
+                supportUs: supportUsDE
             },
             en: {
                 menu: menuEN,
@@ -31,11 +34,13 @@ const i18n = i18next
                 aboutUs: aboutUsEN,
                 aboutAlli: aboutAlliEN,
                 imprint: imprintEN,
+                supportUs: supportUsEN
             },
         },
+        lng: "de",
         supportedLngs: [ "de", "en" ],
         languageOptions: [ "de", "en" ],
-        fallbackLng: "sv",
+        fallbackLng: "de",
         interpolation: {
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
         }
