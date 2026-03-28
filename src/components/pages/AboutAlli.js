@@ -10,12 +10,12 @@ const AboutAlli = () => {
         <Layout route={t("title")}>
             <ContentSection>
             <h1>{t("title")}</h1>
-            {t("content").split("\n").map(line => <p>{line}</p>)}
+            {t("content").split("\n").map((line, index) => <p key={index}>{line}</p>)}
             </ContentSection>
             <ContentSection>
             <h2>{t("functionalityHeading")}</h2>
             <ul>
-                {t("functionalities").split("\n").map(line => <li>{line}</li>)}
+                {t("functionalities").split("\n").map((line, index) => <p key={index}>{line}</p>)}
             </ul>
             </ContentSection>
         </Layout>

@@ -44,9 +44,9 @@ const Imprint = () => {
                 </a>
                 </p>
                 <h1>{t("headingDisclaimer")}</h1>
-                {t("contentDisclaimer").split("\n").map(line => <p>{line}</p>)}
+                {t("contentDisclaimer").split("\n").map((line, index) => <p key={index}>{line}</p>)}
                 <h1>{t("headingCopyright")}</h1>
-                {t("contentCopyright").split("\n").map(line => <p>{line}</p>)}
+                {t("contentCopyright").split("\n").map((line, index) => <p key={index}>{line}</p>)}
             </div>
             </ContentSection>
         </Layout>
