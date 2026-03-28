@@ -1,14 +1,20 @@
-import i18n from '../utils/i18next.js';
+
 import styles from "./Header.module.scss";
+import { useTranslation } from "react-i18next";
 
 const LanguageOptions = () => {
-    const languageOptions = i18n.languages.map(option => {
+    let { t, i18n } = useTranslation();
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
+    const languageOptions = ["de", "en"].map((option, index) => {
         return (
-            <button
+            <button key={index}
                 className={styles.languageButton}
-                onClick={() => console.log(option.code)}
+                onClick={() => changeLanguage(option)}
             >
-                { option.title }
+                { option }
             </button>
         )
     })

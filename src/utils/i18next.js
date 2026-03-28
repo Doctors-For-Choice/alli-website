@@ -11,6 +11,7 @@ import aboutAlliDE from "../assets/locales/aboutAlli/de.json"
 import aboutAlliEN from "../assets/locales/aboutAlli/en.json"
 import imprintDE from "../assets/locales/imprint/de.json"
 import imprintEN from "../assets/locales/imprint/en.json"
+import languageOptions from "../components/LanguageOptions";
 
 
 const i18n = i18next
@@ -34,16 +35,13 @@ const i18n = i18next
                 imprint: imprintEN,
             },
         },
-        fallbackLng: "de",
+        supportedLngs: [ "de", "en" ],
+        languageOptions: [ "de", "en" ],
+        fallbackLng: "sv",
         interpolation: {
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
         }
     },
 );
-
-i18n.languages = [
-    { code: 'de', title: 'Deutsch' },
-    { code: 'en', title: 'English' }
-]
 
 export default i18n;
