@@ -1,12 +1,4 @@
-.contact {
-    h1{
-        font-size: 16px;
-        font-family: 'Overpass Bold', sans-serif;
-    }
-    h2 {
-        font-size: 16px;
-    }
-}
+@import '../../styles/global.scss';
 
 .envelopeIcon{
     font-size: 32px;
@@ -30,11 +22,7 @@
 
 
 @media screen and (min-width: 768px) {
-    .contact {
-        p, h1, h2, a {
-            font-size: 20px;
-        }
-    }
+
     .mailSection{
         justify-content: center;
     }
