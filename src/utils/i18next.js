@@ -17,6 +17,8 @@ import homeDE from "../assets/locales/home/de.json"
 import homeEN from "../assets/locales/home/en.json"
 import feedbackDE from "../assets/locales/feedback/de.json"
 import feedbackEN from "../assets/locales/feedback/en.json"
+import informationDE from "../assets/locales/informationQualifiedPersonell/de.json"
+import informationEN from "../assets/locales/informationQualifiedPersonell/en.json"
 
 const i18n = i18next
     .use(initReactI18next)
@@ -32,7 +34,8 @@ const i18n = i18next
                 imprint: imprintDE,
                 supportUs: supportUsDE,
                 home: homeDE,
-                feedback: feedbackDE
+                feedback: feedbackDE,
+                information: informationDE
             },
             en: {
                 menu: menuEN,
@@ -42,7 +45,8 @@ const i18n = i18next
                 imprint: imprintEN,
                 supportUs: supportUsEN,
                 home: homeEN,
-                feedback: feedbackEN
+                feedback: feedbackEN,
+                information: informationEN
             },
         },
         lng: "de",
