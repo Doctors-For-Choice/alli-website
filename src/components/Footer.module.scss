@@ -22,3 +22,9 @@
   border-radius: 1em;
   padding: 0.5em;
 }
+
+@media screen and (max-width: 400px) {
+  .img {
+    height: 70px;
+  }
+}
