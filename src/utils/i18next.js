@@ -13,6 +13,8 @@ import imprintDE from "../assets/locales/imprint/de.json"
 import imprintEN from "../assets/locales/imprint/en.json"
 import supportUsDE from "../assets/locales/support/de.json"
 import supportUsEN from "../assets/locales/support/en.json"
+import homeDE from "../assets/locales/home/de.json"
+import homeEN from "../assets/locales/home/en.json"
 
 const i18n = i18next
     .use(initReactI18next)
@@ -26,7 +28,8 @@ const i18n = i18next
                 aboutUs: aboutUsDE,
                 aboutAlli: aboutAlliDE,
                 imprint: imprintDE,
-                supportUs: supportUsDE
+                supportUs: supportUsDE,
+                home: homeDE,
             },
             en: {
                 menu: menuEN,
@@ -34,7 +37,8 @@ const i18n = i18next
                 aboutUs: aboutUsEN,
                 aboutAlli: aboutAlliEN,
                 imprint: imprintEN,
-                supportUs: supportUsEN
+                supportUs: supportUsEN,
+                home: homeEN
             },
         },
         lng: "de",
