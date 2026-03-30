@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import AboutAlli from "./pages/AboutAlli"
 import SupportUs from "./pages/SupportUs";
-import Information from "./pages/InformationQualifiedPersonell"
+import Information from "./pages/InformationQualifiedPersonnel"
 import Feedback from "./pages/Feedback"
 import Contact from "./pages/Contact";
 import Imprint from "./pages/Imprint"

@@ -1,0 +1,7 @@
+{
+  "title": "Donations",
+  "content": "Alli is and will continue to be free of charge (or ads) and is funded by donations. Hosting and maintaining an app requires time and money. We also intend to develop Alli further. Your donation helps us to cover the running cost and new developments, whether it be for the design or code development, raising awareness / making sure that the App reaches its intended audience.",
+  "donationWidgetDescription": "Donation widget (Doctors for Choice e.V.)",
+  "getInvolvedHeading": "Get involved",
+  "getInvolvedContent": "We're always looking for software devs and or designers who wish to support us. The current tech stack for the Alli App is based on React Native (through Expo), with a Strapi-CMS as backend. Deployment further involves traefik for scaling / routing.\nCurrently, this is done as voluntary work, but we're working on getting more grants to make payment possible.\nFeel free to reach out to us at team@alli-app.com, if you're interested!\nIt would be helpful, if you could already give a rough estimate how much time you want to dedicate to the project and whether you want to support us long-term or just for a while."
+}
