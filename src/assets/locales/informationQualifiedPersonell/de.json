@@ -2,5 +2,12 @@
   "title": "Informationen für Fachkreise",
   "content": "Sie begleiten Patient*innen bei einer medikamentösen Schwangerschaftsbeendigung? Gerne können Sie auf die App Alli aufmerksam machen!\nAlli dient als zusätzlicher Wegbegleiter für Ihre Patient*innen im Verlauf der Schwangerschaftsbeendigung. In der App erhalten Ihre Patient*innen alle notwendigen Informationen über den Ablauf, die Medikamente und mögliche Nebenwirkungen oder Risiken. Sie werden außerdem während des Prozesses – zeitlich abgestimmt – auf mögliche Veränderungen, Begleiterscheinungen und Komplikationen vorbereitet und über mögliche notwendige Maßnahmen informiert. Dadurch soll die Autonomie und Selbstbestimmung der Patient*innen im Sinne einer informierten Entscheidungsfindung gestärkt werden.\nAlli wurde von einem ärztlichen Expertinnen-Team entwickelt. Die Inhalte sind wissenschaftlich fundiert und orientieren sich an den internationalen Leitlinien der amerikanischen (ACOG), britischen (RCOG) und deutschen (DGGG) gynäkologischen Fachgesellschaften sowie den Empfehlungen der Weltgesundheitsorganisation.\nWir freuen uns über Ihr Feedback und Verbesserungsvorschläge unter der Rubrik “Feedback”!",
   "materials": "Materialien",
-  "materialsContent": "Zur Verbreitung des Wissens sind wir auf Sie als unser Netzwerk angewiesen! Zur Hilfestellung bieten wir Ihnen hier eine Reihe an Materialien, die Sie nutzen können, um über Alli zu informieren. Die Nutzung ist damit <strong>ausdrücklich erwünscht</strong>."
+  "materialsContent": "Zur Verbreitung des Wissens sind wir auf Sie als unser Netzwerk angewiesen! Zur Hilfestellung bieten wir Ihnen hier eine Reihe an Materialien, die Sie nutzen können, um über Alli zu informieren. Die Nutzung ist damit <strong>ausdrücklich erwünscht</strong>.",
+  "flyerDescription": "Für einen einfachen Zugang zur App bieten wir Download-Flyer zum Druck an, auf denen die Patient*innen nur einen QR-Code mit ihrem Handy scannen müssen:",
+  "singleFlyerLayout": "Einzelner Flyer",
+  "fourFlyerLayout": "Print-Version: vier Flyer pro Seite",
+  "qrCodesDescription": "Zur Gestaltung und Integration in Ihre eigenen Unterlagen bieten wir hier auch die QR-Codes allein an. Sie können diese durch einen Klick auf das jeweilige Bild herunterladen.",
+  "businessCardsDescription": "Gerne schicken wir Ihnen auch Alli-Visitenkarten (gegen eine kleine Spende) für die Praxis zu! Senden Sie uns dafür gerne eine Mail an <0/>.",
+  "businessCardsPrintTemplateDescription": "Alternativ können Sie diese auch mit der folgenden Datei selbst ausdrucken:",
+  "businessCards": "Visitenkarten"
 }

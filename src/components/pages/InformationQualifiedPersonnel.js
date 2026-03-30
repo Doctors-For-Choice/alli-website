@@ -29,13 +29,13 @@ const Information = () => {
             </Trans>
           </p>
           <h3>Flyer</h3>
-          <p>Für einen einfachen Zugang zur App bieten wir Download-Flyer zum Druck an, auf denen die Patient*innen nur einen QR-Code mit ihrem Handy scannen müssen:</p>
+          <p>{t("flyerDescription")}</p>
           <div className={styles.two_columns}>
-            <p><a href={flyerDigital} download={"Alli-App-Flyer-Digital.pdf"}>Einzelner Flyer</a></p>
-            <p><a href={flyerPrint} download={"Alli-App-Flyer-Print.pdf"}>Print-Version: vier Flyer pro Seite</a></p>
+            <p><a href={flyerDigital} download={"Alli-App-Flyer-Digital.pdf"}>{t("singleFlyerLayout")}</a></p>
+            <p><a href={flyerPrint} download={"Alli-App-Flyer-Print.pdf"}>{t("fourFlyerLayout")}</a></p>
           </div>
           <h3>QR-Codes</h3>
-            <p>Zur Gestaltung und Integration in Ihre eigenen Unterlagen bieten wir hier auch die QR-Codes allein an. Sie können diese durch einen Klick auf das jeweilige Bild herunterladen.</p>
+            <p>{t("qrCodesDescription")}</p>
             <div className={styles.two_columns}>
               <div id="android" className={styles.imgContainer}>
                 <a href={qrPlayStore} download={"alli_app-qr-google_play_store.png"}>
@@ -62,15 +62,24 @@ const Information = () => {
                 />
               </div>
             </div>
-          <h3>Visitenkarten</h3>
-          <p>Gerne schicken wir Ihnen auch Alli-Visitenkarten (gegen eine kleine Spende) für die Praxis zu! Senden Sie uns dafür gerne eine Mail an <a href="mailto:buero@doctorsforchoice.de">buero@doctorsforchoice.de</a>.</p>
-          <p>Alternativ können Sie diese auch mit der folgenden Datei selbst ausdrucken.</p>
+          <h3>{t("businessCards")}</h3>
+          <p>
+            <Trans
+              i18nKey="businessCardsDescription"
+              components={[
+                <a href="mailto:buero@doctorsforchoice.de" key="0">buero@doctorsforchoice.de</a>
+              ]}
+            >
+              {t("businessCardsDescription")}
+            </Trans>
+          </p>
+          <p>{t("businessCardsPrintTemplateDescription")}</p>
           <p>
             <a
               href={businessCards}
               download={"Alli-App-Visitenkarten.pdf"}
             >
-            Visitenkarten
+              {t("businessCards")}
             </a>
           </p>
         </ContentSection>
