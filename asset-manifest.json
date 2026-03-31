@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cad702b8.css",
-    "main.js": "/static/js/main.e4691eaa.js",
+    "main.css": "/static/css/main.529067c4.css",
+    "main.js": "/static/js/main.d40aeb0b.js",
     "static/js/453.fccfa67d.chunk.js": "/static/js/453.fccfa67d.chunk.js",
     "static/media/app-banner.png": "/static/media/app-banner.a4d6c4963da50b5ed69b.png",
     "static/media/alli_app-business-cards.pdf": "/static/media/alli_app-business-cards.b96c93449a3450ca3422.pdf",
@@ -19,12 +19,12 @@
     "static/media/logo_prototypefund.svg": "/static/media/logo_prototypefund.57ee6a4656a5f5c5ed555509651f45e7.svg",
     "static/media/alli-logo.svg": "/static/media/alli-logo.f3de64c2400e4c57e03145ab93110045.svg",
     "index.html": "/index.html",
-    "main.cad702b8.css.map": "/static/css/main.cad702b8.css.map",
-    "main.e4691eaa.js.map": "/static/js/main.e4691eaa.js.map",
+    "main.529067c4.css.map": "/static/css/main.529067c4.css.map",
+    "main.d40aeb0b.js.map": "/static/js/main.d40aeb0b.js.map",
     "453.fccfa67d.chunk.js.map": "/static/js/453.fccfa67d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cad702b8.css",
-    "static/js/main.e4691eaa.js"
+    "static/css/main.529067c4.css",
+    "static/js/main.d40aeb0b.js"
   ]
 }
