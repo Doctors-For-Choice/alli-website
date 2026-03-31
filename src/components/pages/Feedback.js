@@ -16,7 +16,7 @@ const Feedback = () => {
                                aria-label="Send us a mail"
                                className={styles.mailSection}
                                 key="0"
-                            />]
+                            >team@alli-app.com</a>]
                         }>{t("content")}</Trans>
                     </p>
                 </ContentSection>
