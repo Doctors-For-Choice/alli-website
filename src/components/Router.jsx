@@ -1,12 +1,12 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import AboutAlli from "./pages/AboutAlli"
-import SupportUs from "./pages/SupportUs";
-import Information from "./pages/InformationQualifiedPersonnel"
-import Feedback from "./pages/Feedback"
-import Contact from "./pages/Contact";
-import Imprint from "./pages/Imprint"
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import AboutAlli from "./pages/AboutAlli.jsx"
+import SupportUs from "./pages/SupportUs.jsx";
+import Information from "./pages/InformationQualifiedPersonnel.jsx"
+import Feedback from "./pages/Feedback.jsx"
+import Contact from "./pages/Contact.jsx";
+import Imprint from "./pages/Imprint.jsx"
 
 const Router = () => {
   return (

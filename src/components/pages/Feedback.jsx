@@ -1,6 +1,6 @@
-import Layout from "../Layout";
+import Layout from "../Layout.jsx";
 import styles from "./Feedback.module.scss";
-import ContentSection from "../ContentSection";
+import ContentSection from "../ContentSection.jsx";
 import {Trans, useTranslation} from "react-i18next";
 
 const Feedback = () => {

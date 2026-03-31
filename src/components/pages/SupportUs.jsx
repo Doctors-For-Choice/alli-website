@@ -1,7 +1,7 @@
-import ContentSection from "../ContentSection";
-import Layout from "../Layout";
+import ContentSection from "../ContentSection.jsx";
+import Layout from "../Layout.jsx";
 import styles from "./SupportUs.module.scss";
-import { DonationWidget } from "../DonationWidget.js";
+import { DonationWidget } from "../DonationWidget.jsx";
 import {useTranslation} from "react-i18next";
 
 const SupportUs = () => {

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
+import Footer from "./Footer.jsx";
+import Header from "./Header.jsx";
 import styles from "./Layout.module.scss"
-import Route from "./Route";
+import Route from "./Route.jsx";
 
 export default function Layout({ children, route }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -1,6 +1,6 @@
-import Layout from "../Layout";
+import Layout from "../Layout.jsx";
 import styles from "./Imprint.module.scss";
-import ContentSection from "../ContentSection";
+import ContentSection from "../ContentSection.jsx";
 import {useTranslation} from "react-i18next";
 
 const Imprint = () => {

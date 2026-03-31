@@ -5,8 +5,8 @@ import qrAppStore from "../../assets/images/alli_app-qr-app_store.png"
 import qrPlayStore from "../../assets/images/alli_app-qr-google_play_store.png"
 import PlayStoreButton from "../../assets/images/PlayStoreButton.svg"
 import AppStoreButton from "../../assets/images/AppStoreButton.svg"
-import ContentSection from "../ContentSection";
-import Layout from "../Layout";
+import ContentSection from "../ContentSection.jsx";
+import Layout from "../Layout.jsx";
 import styles from "./InformationQualifiedPersonnel.module.scss"
 import {Trans, useTranslation} from "react-i18next";
 
