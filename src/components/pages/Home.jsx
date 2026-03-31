@@ -5,7 +5,7 @@ import styles from "./Home.module.scss"
 import app_banner from "../../assets/images/app-banner.png"
 import PlayStoreButton from "../../assets/images/PlayStoreButton.svg"
 import AppStoreButton from "../../assets/images/AppStoreButton.svg"
-import {Trans, useTranslation} from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const Home = () => {
     const { t } = useTranslation("home");

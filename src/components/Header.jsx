@@ -3,7 +3,7 @@ import AlliTitle from "./AlliTitle.jsx";
 import styles from "./Header.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
-import Route from "./Route.jsx";
+import RouteComponent from "./RouteComponent.jsx";
 import { useNavigate } from "react-router-dom";
 import LanguageOptions from "./LanguageOptions.jsx";
 import { useTranslation } from "react-i18next";
@@ -170,7 +170,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
             </li>
           </ul>
         </nav>
-        <Route route="Menu" />
+        <RouteComponent route="Menu" />
       </div>
     </>
   );

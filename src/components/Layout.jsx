@@ -2,7 +2,7 @@ import { useState } from "react";
 import Footer from "./Footer.jsx";
 import Header from "./Header.jsx";
 import styles from "./Layout.module.scss"
-import Route from "./Route.jsx";
+import RouteComponent from "./RouteComponent.jsx";
 
 export default function Layout({ children, route }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,12 +10,15 @@ export default function Layout({ children, route }) {
   return (
     <div>
       <a href="#main-content" className={styles.srOnly}>Skip to Content</a>
-      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
-      <div className={styles.page} style={{ height: isMenuOpen && "0px", overflow: isMenuOpen && "hidden"}}>
+      <div>HEADER PLACEHOLDER</div>
+        {/*<Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>*/}
+      <div className={styles.page}
+           style={{ height: isMenuOpen && "0px", overflow: isMenuOpen && "hidden"}}>
         <div id="main-content" className={styles.content}>
           {children}
         </div>
-      <Route route={route}/>
+      <div>ROUTE COMPONENT PLACEHOLDER</div>
+        {/*<RouteComponent route={route}/>*/}
       <Footer />
       </div>
     </div>

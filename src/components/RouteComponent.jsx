@@ -1,6 +1,6 @@
 import styles from "./Route.module.scss";
 
-const Route = ({route}) => {
+const RouteComponent = ({route}) => {
     return(
         <div aria-hidden="true" className={styles.banner}>
             {route}
@@ -8,4 +8,4 @@ const Route = ({route}) => {
     )
 }
 
-export default Route;
+export default RouteComponent;
