@@ -1,5 +1,5 @@
-import Layout from "../Layout";
-import ContentSection from "../ContentSection";
+import Layout from "../Layout.jsx";
+import ContentSection from "../ContentSection.jsx";
 import styles from "./About.module.scss"
 import {useTranslation} from "react-i18next";
 

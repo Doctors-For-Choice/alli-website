@@ -1,9 +1,9 @@
-import ContentSection from "../ContentSection";
-import Layout from "../Layout";
+import ContentSection from "../ContentSection.jsx";
+import Layout from "../Layout.jsx";
 import styles from "./Contact.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {Trans, useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { t } = useTranslation("contact"); // not passing any namespace will use the defaultNS (by default set to 'translation')

@@ -19,7 +19,6 @@ const LanguageOptions = () => {
             <button
                 key={index}
                 className={styles.languageButton}
-                selected={active}
                 onClick={() => changeLanguage(option.code)}
             >
                 { option.title }
