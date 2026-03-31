@@ -5,7 +5,7 @@ import { DonationWidget } from "../DonationWidget.jsx";
 import {useTranslation} from "react-i18next";
 
 const SupportUs = () => {
-  const { t, i18n } = useTranslation("supportUs");
+  const { t } = useTranslation("supportUs");
   return (
     <div className={styles.supportUs}>
       <Layout route="Unterstützung">
