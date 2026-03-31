@@ -1,11 +1,11 @@
-import AlliTitle from "../AlliTitle";
-import ContentSection from "../ContentSection";
-import Layout from "../Layout";
+import AlliTitle from "../AlliTitle.jsx";
+import ContentSection from "../ContentSection.jsx";
+import Layout from "../Layout.jsx";
 import styles from "./Home.module.scss"
 import app_banner from "../../assets/images/app-banner.png"
 import PlayStoreButton from "../../assets/images/PlayStoreButton.svg"
 import AppStoreButton from "../../assets/images/AppStoreButton.svg"
-import {Trans, useTranslation} from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const Home = () => {
     const { t } = useTranslation("home");

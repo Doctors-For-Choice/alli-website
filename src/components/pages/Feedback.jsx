@@ -1,6 +1,6 @@
-import Layout from "../Layout";
+import Layout from "../Layout.jsx";
 import styles from "./Feedback.module.scss";
-import ContentSection from "../ContentSection";
+import ContentSection from "../ContentSection.jsx";
 import {Trans, useTranslation} from "react-i18next";
 
 const Feedback = () => {
@@ -16,7 +16,7 @@ const Feedback = () => {
                                aria-label="Send us a mail"
                                className={styles.mailSection}
                                 key="0"
-                            >team@alli-app.com</a>]
+                            />]
                         }>{t("content")}</Trans>
                     </p>
                 </ContentSection>
