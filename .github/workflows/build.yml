@@ -1,15 +1,54 @@
-- name: Deploy GitHub Pages site
-  uses: actions/deploy-pages@v3.0.2-node.24
-  with:
-    # GitHub token
-    token: # default is ${{ github.token }}
-    # Time in milliseconds after which to timeout and cancel the deployment (default: 10 minutes)
-    timeout: # optional, default is 600000
-    # Maximum number of status report errors before cancelling a deployment (default: 10)
-    error_count: # optional, default is 10
-    # Time in milliseconds between two deployment status report (default: 5 seconds)
-    reporting_interval: # optional, default is 5000
-    # Name of the artifact to deploy
-    artifact_name: # optional, default is github-pages
-    # Is this attempting to deploy a pull request as a GitHub Pages preview site? (NOTE: This feature is only in alpha currently and is not available to the public!)
-    preview: # optional, default is false
+name: Deploy React App
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  pages: write
+  contents: read
+  checks: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Predeploy (build)
+        id: predeploy
+        run: |
+          set -e
+          npm run predeploy
+
+      - name: Create check run for predeploy result
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const conclusion = (process.exitCode && process.exitCode !== 0) ? 'failure' : 'success';
+            await github.checks.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: 'predeploy-build',
+              head_sha: context.sha,
+              status: 'completed',
+              conclusion,
+              output: {
+                title: 'Predeploy build',
+                summary: conclusion === 'success' ? 'Predeploy succeeded' : 'Predeploy failed'
+              }
+            });
