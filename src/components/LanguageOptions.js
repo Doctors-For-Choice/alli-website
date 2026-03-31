@@ -4,7 +4,9 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
 const LanguageOptions = () => {
+    // eslint-disable-next-line no-unused-vars
     let { _, i18n } = useTranslation();
+    // eslint-disable-next-line no-unused-vars
     const [active, setActive] = useState(false);
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -19,7 +21,6 @@ const LanguageOptions = () => {
             <button
                 key={index}
                 className={styles.languageButton}
-                selected={active}
                 onClick={() => changeLanguage(option.code)}
             >
                 { option.title }
