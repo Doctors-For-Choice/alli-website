@@ -15,7 +15,7 @@ const AboutAlli = () => {
             <ContentSection>
             <h2>{t("functionalityHeading")}</h2>
             <ul>
-                {t("functionalities").split("\n").map((line, index) => <p key={index}>{line}</p>)}
+                {t("functionalities").split("\n").map((line, index) => <li key={index}>{line}</li>)}
             </ul>
             </ContentSection>
         </Layout>
