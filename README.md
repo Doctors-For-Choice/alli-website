@@ -28,7 +28,9 @@ You may also see any lint errors in the console.
 Predeploy: `npm run predeploy`  
 Deploy: `npm run deploy`  
 Approve changes: Github > Actions > “pages build and deployment” > deploy > “Review pending deployments”  
-Create URL redirection: Github > Settings > Pages > Custom Domain > `alli-app.com`  
+Create URL redirection: Github > Settings > Pages > Custom Domain > `alli-app.com` 
+… or click [here](https://github.com/Doctors-For-Choice/alli-website/settings/pages).
+
 Open website with refreshed cache (cmd+shift+r) and check for changes
 
 Optional: Visit cloudflare.com and enable “Entwicklermodus” if changes are not visible
