@@ -36,7 +36,7 @@
   margin: 8px;
   border-radius: 5px;
   border: 1px solid var(--core-strong-contrast);
-  color: var(--darkest-blue);
+  color: inherit;
 
   * {
     background-color: inherit;
@@ -63,6 +63,7 @@
             padding:  20px 8px 20px 8px;
             list-style-type: none;
             button{
+                text-align: left;
                 border: none;
                 color: light-dark(--core-text);
                 font-size: 24px;
