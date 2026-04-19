@@ -12,9 +12,9 @@ Clone with HTTPS: `git clone https://github.com/Doctors-For-Choice/alli-website.
 
 ## Install and run locally
 
-Install: `npm install`
+Install: `npm ci`
 
-Start the project: `npm start`
+Start the project: `npm run dev`
 
 This runs the app in the development mode.
 
