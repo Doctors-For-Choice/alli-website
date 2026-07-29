@@ -11,7 +11,6 @@ import i18n from "./utils/i18next.js"
 
 function App() {
     return (
-        <>
         <BrowserRouter>
             <Routes>
                 <Route index path="/" element={<Home />} />
@@ -24,7 +23,6 @@ function App() {
                 <Route path="/imprint" element={<Imprint />} />
             </Routes>
         </BrowserRouter>
-        </>
     );
 }
 
