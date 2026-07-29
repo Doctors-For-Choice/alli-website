@@ -11,7 +11,7 @@ import i18n from "./utils/i18next.js"
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/">
             <Routes>
                 <Route index path="/" element={<Home />} />
                 <Route path="/about-alli" element={<AboutAlli />} />

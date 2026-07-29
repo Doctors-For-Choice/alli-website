@@ -24,6 +24,23 @@
     background-color: var(--background-duotone);
 }
 
+button {
+    border: none;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--core-strong-contrast);
+    color: inherit;
+    font-family: inherit;
+
+    * {
+        font-size: 1rem;
+        background-color: inherit;
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
 .emphasized {
     font-style: normal;
     box-shadow: inset 0px -8px  var(--medium-blue);
