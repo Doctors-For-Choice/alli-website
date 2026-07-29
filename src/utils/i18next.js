@@ -19,6 +19,8 @@ import feedbackDE from "../assets/locales/feedback/de.json"
 import feedbackEN from "../assets/locales/feedback/en.json"
 import informationDE from "../assets/locales/informationQualifiedPersonell/de.json"
 import informationEN from "../assets/locales/informationQualifiedPersonell/en.json"
+import notFound404DE from "../assets/locales/notFound/de.json"
+import notFound404EN from "../assets/locales/notFound/en.json"
 
 const i18n = i18next
     .use(initReactI18next)
@@ -35,7 +37,8 @@ const i18n = i18next
                 supportUs: supportUsDE,
                 home: homeDE,
                 feedback: feedbackDE,
-                information: informationDE
+                information: informationDE,
+                notFound: notFound404DE
             },
             en: {
                 menu: menuEN,
@@ -46,7 +49,8 @@ const i18n = i18next
                 supportUs: supportUsEN,
                 home: homeEN,
                 feedback: feedbackEN,
-                information: informationEN
+                information: informationEN,
+                notFound: notFound404EN
             },
         },
         lng: "de",
