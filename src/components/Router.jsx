@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import AboutAlli from "./pages/AboutAlli.jsx"
@@ -10,7 +10,7 @@ import Imprint from "./pages/Imprint.jsx"
 
 const Router = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-alli" element={<AboutAlli />} />
@@ -21,7 +21,7 @@ const Router = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/imprint" element={<Imprint />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 export default Router;
