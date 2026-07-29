@@ -8,12 +8,12 @@ import Feedback from "./components/pages/Feedback"
 import Contact from "./components/pages/Contact";
 import Imprint from "./components/pages/Imprint"
 import i18n from "./utils/i18next.js"
+import NotFound from "./components/pages/404"
 
 function App() {
     return (
         <BrowserRouter basename="/">
             <Routes>
-                <Route index path="/" element={<Home />} />
                 <Route path="/about-alli" element={<AboutAlli />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/support-us" element={<SupportUs />} />
@@ -21,6 +21,8 @@ function App() {
                 <Route path="/feedback" element={<Feedback />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/imprint" element={<Imprint />} />
+                <Route index path="/" element={<Home />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     );
