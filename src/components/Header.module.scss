@@ -60,13 +60,12 @@
     ul {
         padding: 8px;
         li{
-            padding:  20px 8px 20px 8px;
             list-style-type: none;
             button{
                 text-align: left;
                 border: none;
                 color: light-dark(--core-text);
-                font-size: 24px;
+                font-size: 1.25rem;
                 font-family: 'Overpass Bold', sans-serif;
             }
             :hover {
