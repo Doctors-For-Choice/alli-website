@@ -20,8 +20,7 @@ const LanguageOptions = () => {
         <button
             className={styles.languageButton}
             onClick={() => nextLanguage()}
-            aria-label={`language-${lng}`}
-            aria-description={`Current language is ${lng}, click to change`}
+            aria-label={`language: ${t("language")}`}
         >
             {t("language")}
         </button>
