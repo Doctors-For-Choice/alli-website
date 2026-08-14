@@ -60,9 +60,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
             <AlliTitle />
           </button>
         </div>
-        <div>
-          <LanguageOptions />
-        </div>
+
         <div className={styles.burgerContainer}>
           <button
             onClick={toggleMenu}
@@ -170,7 +168,10 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
             </li>
           </ul>
         </nav>
-        <RouteComponent route="Menu" />
+        <div>
+          <RouteComponent route="Menu" />
+          <LanguageOptions/>
+        </div>
       </div>
     </>
   );

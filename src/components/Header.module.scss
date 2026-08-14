@@ -30,19 +30,6 @@
         }
 }
 
-.languageButton {
-  border: none;
-  padding: 8px;
-  margin: 8px;
-  border-radius: 5px;
-  border: 1px solid var(--core-strong-contrast);
-  color: inherit;
-
-  * {
-    background-color: inherit;
-  }
-}
-
 .menu {
   position: fixed;
   top: 56px;
@@ -56,6 +43,7 @@
     position: relative;
     display: flex;
     align-items: center;
+
 
     ul {
         padding: 8px;
@@ -97,6 +85,14 @@
     padding: 8px;
     align-items: center;
     display: flex;
+}
+
+.languageButton {
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
 }
 
 
