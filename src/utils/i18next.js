@@ -2,14 +2,15 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import detector from "i18next-browser-languagedetector";
 import contactDE from "../assets/locales/contact/de.json"
-import aboutUsDE from "../assets/locales/aboutUs/de.json"
 import contactEN from "../assets/locales/contact/en.json"
+import aboutUsDE from "../assets/locales/aboutUs/de.json"
 import aboutUsEN from "../assets/locales/aboutUs/en.json"
 import menuDE from "../assets/locales/menu/de.json"
 import menuEN from "../assets/locales/menu/en.json"
 import menuRO from "../assets/locales/menu/ro.json"
 import aboutAlliDE from "../assets/locales/aboutAlli/de.json"
 import aboutAlliEN from "../assets/locales/aboutAlli/en.json"
+import aboutAlliRO from "../assets/locales/aboutAlli/ro.json"
 import imprintDE from "../assets/locales/imprint/de.json"
 import imprintEN from "../assets/locales/imprint/en.json"
 import supportUsDE from "../assets/locales/support/de.json"
@@ -57,6 +58,7 @@ const i18n = i18next
             ro: {
                 menu: menuRO,
                 home: homeRO,
+                aboutAlli: aboutAlliRO,
             }
         },
         lng: "de",
