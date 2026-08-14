@@ -22,6 +22,7 @@ import homeEN from "../assets/locales/home/en.json"
 import homeRO from "../assets/locales/home/ro.json"
 import feedbackDE from "../assets/locales/feedback/de.json"
 import feedbackEN from "../assets/locales/feedback/en.json"
+import feedbackRO from "../assets/locales/feedback/ro.json"
 import informationDE from "../assets/locales/informationQualifiedPersonell/de.json"
 import informationEN from "../assets/locales/informationQualifiedPersonell/en.json"
 import notFound404DE from "../assets/locales/notFound/de.json"
@@ -62,7 +63,8 @@ const i18n = i18next
                 contact: contactRO,
                 aboutUs: aboutUsRO,
                 aboutAlli: aboutAlliRO,
-                home: homeRO
+                home: homeRO,
+                feedback: feedbackRO,
             }
         },
         lng: "de",
