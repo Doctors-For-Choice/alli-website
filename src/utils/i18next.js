@@ -7,6 +7,7 @@ import contactEN from "../assets/locales/contact/en.json"
 import aboutUsEN from "../assets/locales/aboutUs/en.json"
 import menuDE from "../assets/locales/menu/de.json"
 import menuEN from "../assets/locales/menu/en.json"
+import menuRO from "../assets/locales/menu/ro.json"
 import aboutAlliDE from "../assets/locales/aboutAlli/de.json"
 import aboutAlliEN from "../assets/locales/aboutAlli/en.json"
 import imprintDE from "../assets/locales/imprint/de.json"
@@ -15,6 +16,7 @@ import supportUsDE from "../assets/locales/support/de.json"
 import supportUsEN from "../assets/locales/support/en.json"
 import homeDE from "../assets/locales/home/de.json"
 import homeEN from "../assets/locales/home/en.json"
+import homeRO from "../assets/locales/home/ro.json"
 import feedbackDE from "../assets/locales/feedback/de.json"
 import feedbackEN from "../assets/locales/feedback/en.json"
 import informationDE from "../assets/locales/informationQualifiedPersonell/de.json"
@@ -52,10 +54,14 @@ const i18n = i18next
                 information: informationEN,
                 notFound: notFound404EN
             },
+            ro: {
+                menu: menuRO,
+                home: homeRO,
+            }
         },
         lng: "de",
-        supportedLngs: [ "de", "en" ],
-        languageOptions: [ "de", "en" ],
+        supportedLngs: [ "de", "en", "ro" ],
+        languageOptions: [ "de", "en", "ro" ],
         fallbackLng: "de",
         interpolation: {
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
