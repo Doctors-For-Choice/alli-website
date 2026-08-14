@@ -15,6 +15,7 @@ import aboutAlliEN from "../assets/locales/aboutAlli/en.json"
 import aboutAlliRO from "../assets/locales/aboutAlli/ro.json"
 import imprintDE from "../assets/locales/imprint/de.json"
 import imprintEN from "../assets/locales/imprint/en.json"
+import imprintRO from "../assets/locales/imprint/ro.json"
 import supportUsDE from "../assets/locales/support/de.json"
 import supportUsEN from "../assets/locales/support/en.json"
 import homeDE from "../assets/locales/home/de.json"
@@ -63,6 +64,7 @@ const i18n = i18next
                 contact: contactRO,
                 aboutUs: aboutUsRO,
                 aboutAlli: aboutAlliRO,
+                imprint: imprintRO,
                 home: homeRO,
                 feedback: feedbackRO,
             }
