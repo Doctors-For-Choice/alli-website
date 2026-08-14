@@ -5,6 +5,7 @@ import contactDE from "../assets/locales/contact/de.json"
 import contactEN from "../assets/locales/contact/en.json"
 import aboutUsDE from "../assets/locales/aboutUs/de.json"
 import aboutUsEN from "../assets/locales/aboutUs/en.json"
+import aboutUsRO from "../assets/locales/aboutUs/ro.json"
 import menuDE from "../assets/locales/menu/de.json"
 import menuEN from "../assets/locales/menu/en.json"
 import menuRO from "../assets/locales/menu/ro.json"
@@ -59,6 +60,7 @@ const i18n = i18next
                 menu: menuRO,
                 home: homeRO,
                 aboutAlli: aboutAlliRO,
+                aboutUs: aboutUsRO
             }
         },
         lng: "de",
