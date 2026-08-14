@@ -26,6 +26,7 @@ import feedbackEN from "../assets/locales/feedback/en.json"
 import feedbackRO from "../assets/locales/feedback/ro.json"
 import informationDE from "../assets/locales/informationQualifiedPersonell/de.json"
 import informationEN from "../assets/locales/informationQualifiedPersonell/en.json"
+import informationRO from "../assets/locales/informationQualifiedPersonell/ro.json"
 import notFound404DE from "../assets/locales/notFound/de.json"
 import notFound404EN from "../assets/locales/notFound/en.json"
 
@@ -67,6 +68,7 @@ const i18n = i18next
                 imprint: imprintRO,
                 home: homeRO,
                 feedback: feedbackRO,
+                information: informationRO,
             }
         },
         lng: "de",
