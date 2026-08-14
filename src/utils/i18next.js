@@ -18,6 +18,7 @@ import imprintEN from "../assets/locales/imprint/en.json"
 import imprintRO from "../assets/locales/imprint/ro.json"
 import supportUsDE from "../assets/locales/support/de.json"
 import supportUsEN from "../assets/locales/support/en.json"
+import supportUsRO from "../assets/locales/support/ro.json"
 import homeDE from "../assets/locales/home/de.json"
 import homeEN from "../assets/locales/home/en.json"
 import homeRO from "../assets/locales/home/ro.json"
@@ -69,6 +70,7 @@ const i18n = i18next
                 home: homeRO,
                 feedback: feedbackRO,
                 information: informationRO,
+                supportUs: supportUsRO
             }
         },
         lng: "de",

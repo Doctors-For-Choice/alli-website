@@ -1,0 +1,7 @@
+{
+  "title": "Donații",
+  "content": "Alli este și va rămâne o aplicație gratuită. Pentru a putea funcționa, depindem de donații. Administrarea și dezvoltarea unei aplicații necesită timp și resurse. În plus, ne dorim să continuăm îmbunătățirea aplicației Alli.\nDonația ta ne ajută să acoperim costurile de funcționare și să dezvoltăm funcții noi, fie că este vorba despre design, dezvoltare software, promovarea aplicației sau extinderea accesului la informații pentru persoanele care au nevoie de ele.",
+  "donationWidgetDescription": "Formular de donații Doctors for Choice e.V.",
+  "getInvolvedHeading": "Implicǎ-te",
+  "getInvolvedContent": "Căutăm în permanență dezvoltatori și dezvoltatoare software, precum și designeri și designere care doresc să sprijine proiectul nostru. În prezent, aplicația Alli este dezvoltată folosind React Native (prin Expo), cu un backend bazat pe Strapi CMS.\nImplementarea și administrarea tehnică includ, printre altele, scalarea și rutarea prin Traefik, precum și gestionarea solicitărilor către baza de date Strapi.\nÎn prezent, activitatea se desfășoară pe bază de voluntariat, însă lucrăm pentru a obține finanțări suplimentare care să permită remunerarea colaboratorilor.\nDacă ești interesat(ă), ne poți scrie la:\nteam@alli-app.com\nNe-ar ajuta dacă ne-ai putea spune aproximativ cât timp ai putea aloca proiectului și dacă îți dorești o implicare pe termen lung sau doar pentru o perioadă limitată."
+}
