@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import detector from "i18next-browser-languagedetector";
 import contactDE from "../assets/locales/contact/de.json"
 import contactEN from "../assets/locales/contact/en.json"
+import contactRO from "../assets/locales/contact/ro.json"
 import aboutUsDE from "../assets/locales/aboutUs/de.json"
 import aboutUsEN from "../assets/locales/aboutUs/en.json"
 import aboutUsRO from "../assets/locales/aboutUs/ro.json"
@@ -58,9 +59,10 @@ const i18n = i18next
             },
             ro: {
                 menu: menuRO,
-                home: homeRO,
+                contact: contactRO,
+                aboutUs: aboutUsRO,
                 aboutAlli: aboutAlliRO,
-                aboutUs: aboutUsRO
+                home: homeRO
             }
         },
         lng: "de",
