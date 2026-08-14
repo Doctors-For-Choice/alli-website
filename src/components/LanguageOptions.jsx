@@ -9,18 +9,17 @@ const LanguageOptions = () => {
     const languageOptions = [ "de", "en", "ro" ]
 
     const [chosenLanguageIndex, setChosenLanguageIndex] = useState(0);
-    const nextIndex = async () => {
+    const nextLanguage = async () => {
         const index = (chosenLanguageIndex + 1) % languageOptions.length;
         setChosenLanguageIndex(index);
         const lng = languageOptions[index];
         await i18n.changeLanguage(lng);
-        return index
     }
 
     return (
         <button
             className={styles.languageButton}
-            onClick={() => nextIndex()}
+            onClick={() => nextLanguage()}
             aria-label={`language-${lng}`}
             aria-description={`Current language is ${lng}, click to change`}
         >
