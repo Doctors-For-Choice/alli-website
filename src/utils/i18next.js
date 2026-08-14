@@ -38,38 +38,39 @@ const i18n = i18next
         debug: true,
         resources: {
             de: {
-                menu: menuDE,
-                contact: contactDE, // this is the "namespace" so we can have more json files
+                // this is the "namespace" so we can have more json files
                 aboutUs: aboutUsDE,
                 aboutAlli: aboutAlliDE,
-                imprint: imprintDE,
-                supportUs: supportUsDE,
+                contact: contactDE,
                 home: homeDE,
                 feedback: feedbackDE,
+                imprint: imprintDE,
                 information: informationDE,
-                notFound: notFound404DE
+                menu: menuDE,
+                notFound: notFound404DE,
+                supportUs: supportUsDE,
             },
             en: {
-                menu: menuEN,
-                contact: contactEN,
                 aboutUs: aboutUsEN,
                 aboutAlli: aboutAlliEN,
-                imprint: imprintEN,
-                supportUs: supportUsEN,
+                contact: contactEN,
                 home: homeEN,
                 feedback: feedbackEN,
+                imprint: imprintEN,
                 information: informationEN,
-                notFound: notFound404EN
+                menu: menuEN,
+                notFound: notFound404EN,
+                supportUs: supportUsEN,
             },
             ro: {
-                menu: menuRO,
-                contact: contactRO,
                 aboutUs: aboutUsRO,
                 aboutAlli: aboutAlliRO,
-                imprint: imprintRO,
-                home: homeRO,
+                contact: contactRO,
                 feedback: feedbackRO,
+                home: homeRO,
+                imprint: imprintRO,
                 information: informationRO,
+                menu: menuRO,
                 supportUs: supportUsRO
             }
         },
