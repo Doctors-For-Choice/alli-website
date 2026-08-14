@@ -4,36 +4,27 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
 const LanguageOptions = () => {
-    let { _, i18n } = useTranslation();
+    let { t, i18n } = useTranslation("menu");
 
-    const languageOptions = [
-        { code: "de", title: "Deutsch" },
-        { code: "en", title: "English" },
-        { code: "ro", title: "Romanian" }
-    ]
+    const languageOptions = [ "de", "en", "ro" ]
+
     const [chosenLanguageIndex, setChosenLanguageIndex] = useState(0);
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-        setChosenLanguage(lng);
-    };
-
-
-    const nextIndex = () => {
+    const nextIndex = async () => {
         const index = (chosenLanguageIndex + 1) % languageOptions.length;
         setChosenLanguageIndex(index);
         const lng = languageOptions[index];
-        changeLanguage(lng.code);
-        console.log(lngCode);
+        await i18n.changeLanguage(lng);
         return index
     }
-
 
     return (
         <button
             className={styles.languageButton}
             onClick={() => nextIndex()}
+            aria-label={`language-${lng}`}
+            aria-description={`Current language is ${lng}, click to change`}
         >
-            {languageOptions[chosenLanguageIndex].title}
+            {t("language")}
         </button>
     )
 }
