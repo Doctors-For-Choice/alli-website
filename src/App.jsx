@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/pages/Home.jsx";
 import About from "./components/pages/About";
 import AboutAlli from "./components/pages/AboutAlli"
@@ -6,9 +6,10 @@ import SupportUs from "./components/pages/SupportUs";
 import Information from "./components/pages/InformationQualifiedPersonnel"
 import Feedback from "./components/pages/Feedback"
 import Contact from "./components/pages/Contact";
-import Imprint from "./components/pages/Imprint"
+import Imprint from "./components/pages/Imprint";
+import NotFound from "./components/pages/404";
+// eslint-disable-next-line no-unused-vars
 import i18n from "./utils/i18next.js"
-import NotFound from "./components/pages/404"
 
 function App() {
     return (
