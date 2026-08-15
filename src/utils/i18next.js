@@ -1,6 +1,6 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
-import detector from "i18next-browser-languagedetector";
+import LanguageDetector from "i18next-browser-languagedetector";
 import contactDE from "../assets/locales/contact/de.json"
 import aboutUsDE from "../assets/locales/aboutUs/de.json"
 import contactEN from "../assets/locales/contact/en.json"
@@ -22,11 +22,25 @@ import informationEN from "../assets/locales/informationQualifiedPersonell/en.js
 import notFound404DE from "../assets/locales/notFound/de.json"
 import notFound404EN from "../assets/locales/notFound/en.json"
 
+const { VITE_ENVIRONMENT } = import.meta.env;
+
 const i18n = i18next
     .use(initReactI18next)
-    .use(detector)
+    .use(LanguageDetector)
     .init({
-        debug: true,
+        debug: VITE_ENVIRONMENT === "dev",
+        detection: {
+            order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag'],
+            lookupQuerystring: 'lng',
+            lookupCookie: 'i18next',
+            lookupLocalStorage: 'i18nextLng',
+            lookupSessionStorage: 'i18nextLng',
+            // cache user language
+            caches: ['localStorage'],
+            // optional conversion function used to modify the detected language code
+            // we do this because otherwise e.g. en-GB will not count as en
+            convertDetectedLanguage: (lng) => lng.split("-")[0]
+        },
         resources: {
             de: {
                 menu: menuDE,
@@ -53,9 +67,8 @@ const i18n = i18next
                 notFound: notFound404EN
             },
         },
-        lng: "de",
-        supportedLngs: [ "de", "en" ],
-        languageOptions: [ "de", "en" ],
+        supportedLngs: [ "en", "de" ],
+        languageOptions: [ "en", "de" ],
         fallbackLng: "de",
         interpolation: {
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
