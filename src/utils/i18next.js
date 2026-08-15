@@ -1,6 +1,6 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
-import detector from "i18next-browser-languagedetector";
+import LanguageDetector from "i18next-browser-languagedetector";
 import contactDE from "../assets/locales/contact/de.json"
 import aboutUsDE from "../assets/locales/aboutUs/de.json"
 import contactEN from "../assets/locales/contact/en.json"
@@ -26,9 +26,18 @@ const { VITE_ENVIRONMENT } = import.meta.env;
 
 const i18n = i18next
     .use(initReactI18next)
-    .use(detector)
+    .use(LanguageDetector)
     .init({
         debug: VITE_ENVIRONMENT === "dev",
+        detection: {
+            order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag'],
+            lookupQuerystring: 'lng',
+            lookupCookie: 'i18next',
+            lookupLocalStorage: 'i18nextLng',
+            lookupSessionStorage: 'i18nextLng',
+            // cache user language
+            caches: ['localStorage'],
+        },
         resources: {
             de: {
                 menu: menuDE,
