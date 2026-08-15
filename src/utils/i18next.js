@@ -37,6 +37,9 @@ const i18n = i18next
             lookupSessionStorage: 'i18nextLng',
             // cache user language
             caches: ['localStorage'],
+            // optional conversion function used to modify the detected language code
+            // we do this because otherwise e.g. en-GB will not count as en
+            convertDetectedLanguage: (lng) => lng.split("-")[0]
         },
         resources: {
             de: {
