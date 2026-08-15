@@ -22,11 +22,13 @@ import informationEN from "../assets/locales/informationQualifiedPersonell/en.js
 import notFound404DE from "../assets/locales/notFound/de.json"
 import notFound404EN from "../assets/locales/notFound/en.json"
 
+const { VITE_ENVIRONMENT } = import.meta.env;
+
 const i18n = i18next
     .use(initReactI18next)
     .use(detector)
     .init({
-        debug: true,
+        debug: VITE_ENVIRONMENT === "dev",
         resources: {
             de: {
                 menu: menuDE,
@@ -53,9 +55,8 @@ const i18n = i18next
                 notFound: notFound404EN
             },
         },
-        lng: "de",
-        supportedLngs: [ "de", "en" ],
-        languageOptions: [ "de", "en" ],
+        supportedLngs: [ "en", "de" ],
+        languageOptions: [ "en", "de" ],
         fallbackLng: "de",
         interpolation: {
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
